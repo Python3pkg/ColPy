@@ -92,7 +92,7 @@ _F12_definition = {'1964_10': (0.44256, 0.39717), '1931_2': (0.43695, 0.40441)}
 class IlluminantA(BaseIlluminant):
 
     def __init__(self, std_obs='1964_10'):
-        if std_obs not in _A_definition.keys():
+        if std_obs not in list(_A_definition.keys()):
             raise ValueError("unsupported CIE standard observer")
         super().__init__(*_A_definition.get(std_obs))
         
@@ -100,7 +100,7 @@ class IlluminantA(BaseIlluminant):
 class IlluminantB(BaseIlluminant):
 
     def __init__(self, std_obs='1964_10'):
-        if std_obs not in _B_definition.keys():
+        if std_obs not in list(_B_definition.keys()):
             raise ValueError("unsupported CIE standard observer")
         super().__init__(*_B_definition.get(std_obs))
 
@@ -108,7 +108,7 @@ class IlluminantB(BaseIlluminant):
 class IlluminantC(BaseIlluminant):
 
     def __init__(self, std_obs='1964_10'):
-        if std_obs not in _C_definition.keys():
+        if std_obs not in list(_C_definition.keys()):
             raise ValueError("unsupported CIE standard observer")
         super().__init__(*_C_definition.get(std_obs))
 
@@ -116,7 +116,7 @@ class IlluminantC(BaseIlluminant):
 class IlluminantD50(BaseIlluminant):
 
     def __init__(self, std_obs='1964_10'):
-        if std_obs not in _D50_definition.keys():
+        if std_obs not in list(_D50_definition.keys()):
             raise ValueError("unsupported CIE standard observer")
         super().__init__(*_D50_definition.get(std_obs))
 
@@ -124,7 +124,7 @@ class IlluminantD50(BaseIlluminant):
 class IlluminantD55(BaseIlluminant):
 
     def __init__(self, std_obs='1964_10'):
-        if std_obs not in _D55_definition.keys():
+        if std_obs not in list(_D55_definition.keys()):
             raise ValueError("unsupported CIE standard observer")
         super().__init__(*_D55_definition.get(std_obs))
 
@@ -132,7 +132,7 @@ class IlluminantD55(BaseIlluminant):
 class IlluminantD65(BaseIlluminant):
 
     def __init__(self, std_obs='1964_10'):
-        if std_obs not in _D65_definition.keys():
+        if std_obs not in list(_D65_definition.keys()):
             raise ValueError("unsupported CIE standard observer")
         super().__init__(*_D65_definition.get(std_obs))
 
@@ -140,7 +140,7 @@ class IlluminantD65(BaseIlluminant):
 class IlluminantD75(BaseIlluminant):
 
     def __init__(self, std_obs='1964_10'):
-        if std_obs not in _D75_definition.keys():
+        if std_obs not in list(_D75_definition.keys()):
             raise ValueError("unsupported CIE standard observer")
         super().__init__(*_D75_definition.get(std_obs))
 
@@ -148,7 +148,7 @@ class IlluminantD75(BaseIlluminant):
 class IlluminantE(BaseIlluminant):
 
     def __init__(self, std_obs='1964_10'):
-        if std_obs not in _E_definition.keys():
+        if std_obs not in list(_E_definition.keys()):
             raise ValueError("unsupported CIE standard observer")
         super().__init__(*_E_definition.get(std_obs))
 
@@ -156,7 +156,7 @@ class IlluminantE(BaseIlluminant):
 class IlluminantF1(BaseIlluminant):
 
     def __init__(self, std_obs='1964_10'):
-        if std_obs not in _F1_definition.keys():
+        if std_obs not in list(_F1_definition.keys()):
             raise ValueError("unsupported CIE standard observer")
         super().__init__(*_F1_definition.get(std_obs))
 
@@ -164,7 +164,7 @@ class IlluminantF1(BaseIlluminant):
 class IlluminantF2(BaseIlluminant):
 
     def __init__(self, std_obs='1964_10'):
-        if std_obs not in _F2_definition.keys():
+        if std_obs not in list(_F2_definition.keys()):
             raise ValueError("unsupported CIE standard observer")
         super().__init__(*_F2_definition.get(std_obs))
 
@@ -172,7 +172,7 @@ class IlluminantF2(BaseIlluminant):
 class IlluminantF3(BaseIlluminant):
 
     def __init__(self, std_obs='1964_10'):
-        if std_obs not in _F3_definition.keys():
+        if std_obs not in list(_F3_definition.keys()):
             raise ValueError("unsupported CIE standard observer")
         super().__init__(*_F3_definition.get(std_obs))
 
@@ -180,7 +180,7 @@ class IlluminantF3(BaseIlluminant):
 class IlluminantF4(BaseIlluminant):
 
     def __init__(self, std_obs='1964_10'):
-        if std_obs not in _F4_definition.keys():
+        if std_obs not in list(_F4_definition.keys()):
             raise ValueError("unsupported CIE standard observer")
         super().__init__(*_F4_definition.get(std_obs))
 
@@ -188,7 +188,7 @@ class IlluminantF4(BaseIlluminant):
 class IlluminantF5(BaseIlluminant):
 
     def __init__(self, std_obs='1964_10'):
-        if std_obs not in _F5_definition.keys():
+        if std_obs not in list(_F5_definition.keys()):
             raise ValueError("unsupported CIE standard observer")
         super().__init__(*_F5_definition.get(std_obs))
 
@@ -196,7 +196,7 @@ class IlluminantF5(BaseIlluminant):
 class IlluminantF6(BaseIlluminant):
 
     def __init__(self, std_obs='1964_10'):
-        if std_obs not in _F6_definition.keys():
+        if std_obs not in list(_F6_definition.keys()):
             raise ValueError("unsupported CIE standard observer")
         super().__init__(*_F6_definition.get(std_obs))
 
@@ -204,7 +204,7 @@ class IlluminantF6(BaseIlluminant):
 class IlluminantF7(BaseIlluminant):
 
     def __init__(self, std_obs='1964_10'):
-        if std_obs not in _F7_definition.keys():
+        if std_obs not in list(_F7_definition.keys()):
             raise ValueError("unsupported CIE standard observer")
         super().__init__(*_F7_definition.get(std_obs))
 
@@ -212,7 +212,7 @@ class IlluminantF7(BaseIlluminant):
 class IlluminantF8(BaseIlluminant):
 
     def __init__(self, std_obs='1964_10'):
-        if std_obs not in _F8_definition.keys():
+        if std_obs not in list(_F8_definition.keys()):
             raise ValueError("unsupported CIE standard observer")
         super().__init__(*_F8_definition.get(std_obs))
 
@@ -220,7 +220,7 @@ class IlluminantF8(BaseIlluminant):
 class IlluminantF9(BaseIlluminant):
 
     def __init__(self, std_obs='1964_10'):
-        if std_obs not in _F9_definition.keys():
+        if std_obs not in list(_F9_definition.keys()):
             raise ValueError("unsupported CIE standard observer")
         super().__init__(*_F9_definition.get(std_obs))
 
@@ -228,7 +228,7 @@ class IlluminantF9(BaseIlluminant):
 class IlluminantF10(BaseIlluminant):
 
     def __init__(self, std_obs='1964_10'):
-        if std_obs not in _F10_definition.keys():
+        if std_obs not in list(_F10_definition.keys()):
             raise ValueError("unsupported CIE standard observer")
         super().__init__(*_F10_definition.get(std_obs))
 
@@ -236,7 +236,7 @@ class IlluminantF10(BaseIlluminant):
 class IlluminantF11(BaseIlluminant):
 
     def __init__(self, std_obs='1964_10'):
-        if std_obs not in _F11_definition.keys():
+        if std_obs not in list(_F11_definition.keys()):
             raise ValueError("unsupported CIE standard observer")
         super().__init__(*_F11_definition.get(std_obs))
 
@@ -244,7 +244,7 @@ class IlluminantF11(BaseIlluminant):
 class IlluminantF12(BaseIlluminant):
 
     def __init__(self, std_obs='1964_10'):
-        if std_obs not in _F12_definition.keys():
+        if std_obs not in list(_F12_definition.keys()):
             raise ValueError("unsupported CIE standard observer")
         super().__init__(*_F12_definition.get(std_obs))
 
